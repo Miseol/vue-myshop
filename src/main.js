@@ -11,9 +11,9 @@ import VueQuillEditor from 'vue-quill-editor'
 import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css'
+
 // 配置请求的跟路径
 import axios from 'axios' // for bubble theme
-
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 // 设置请求拦截器
 axios.interceptors.request.use(config => {
@@ -26,8 +26,9 @@ Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 
-// tree-table 插件，注册组件
+// tree-table ，注册组件
 Vue.component('tree-table', TreeTable)
+// 富文本编辑器，注册为全局可用的组件
 Vue.use(VueQuillEditor)
 
 Vue.filter('dateFormat', function(originVal) {
