@@ -41,3 +41,8 @@ body,
 .el-cascader-panel {
   height: 200px;
 }
+
+/* 解决 表头边框错位问题 */
+body .el-table th.gutter {
+  display: table-cell !important;
+}
