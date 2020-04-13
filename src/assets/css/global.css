@@ -36,3 +36,8 @@ body,
 .ql-editor {
   min-height: 300px;
 }
+
+/* 级联选择器不能滚动，全部显示的解决方法 */
+.el-cascader-panel {
+  height: 200px;
+}
