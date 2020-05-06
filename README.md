@@ -4,11 +4,7 @@
 
 > 用于管理用户账号，商品分类，商品信息，订单，数据统计等业务功能
 
-
-
 ![](./src/assets/mall_desc01.png)
-
-
 
 ### 开发模式
 
@@ -144,23 +140,17 @@ axios.interceptors.request.use(config => {
 
 ![](./src/assets//mall_desc05.png)
 
-
-
 ### 分类管理
 
 #### 商品分类概述
 
 > 商品分类用于在购物时,快速找到需要购买的商品,进行直观显示
 
-
-
 ### 参数管理
 
 #### 参数管理概述
 
 > 商品参数用于显示商品的特征信息,可以通过电商平台详情页面直观的看到
-
-
 
 ### 项目所用依赖(vue全家桶不描述)
 
@@ -225,7 +215,7 @@ axios.interceptors.request.use(config => {
   - 将路由改为按需加载形式
 
   ```js
- // import Login from '../components/Login.vue'
+  // import Login from '../components/Login.vue'
   const Login = () => import(/* webpackChunkName: "login_home_welcome" */ '../components/Login.vue')
   // import Home from '../components/Home.vue'
   const Home = () => import(/* webpackChunkName: "login_home_welcome" */ '../components/Home.vue')
@@ -233,6 +223,7 @@ axios.interceptors.request.use(config => {
   const Welcome = () => import(/* webpackChunkName: "login_home_welcome" */ '../components/Welcome.vue')
   ...
   ```
+  
 ### 项目上线
 
 #### 通过node创建web服务器
